@@ -45,7 +45,7 @@ public class MyStepdefs {
         assertEquals(Double.toString(arg1), app.output.getText());
         //throw new PendingException();
     }
-    //Вот эта хуйня в 4 лабе
+    //4 лаба
     @Then("^Should be error (.*) on the screen")
     public void result(String arg1){
         assertEquals(arg1, app.error);
