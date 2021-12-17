@@ -11,7 +11,7 @@ import java.awt.event.InputEvent;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
+// Лаба 3
 class MainMock extends Main {
     public MainMock() {super();}
     public String error;
@@ -42,10 +42,10 @@ class UITest {
         b = Math.random();
     }
 
-    public void click(JButton button) throws InterruptedException {
+    public void click(JButton button) throws InterruptedException { // работа с потоком в рнжиме ожидания
         Point p = button.getLocationOnScreen();
-        robot.mouseMove(p.x + 20,p.y + 20);
-        Thread.sleep(100);
+        robot.mouseMove(p.x + 20,p.y + 20); // передвижение курсора в назначенные координаты
+        Thread.sleep(100); // ожидание
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         Thread.sleep(100);
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
