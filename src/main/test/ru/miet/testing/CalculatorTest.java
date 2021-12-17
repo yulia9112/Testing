@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+// Лаба 2
 public final class CalculatorTest{
     private final CalcMock mock = new CalcMock(); // создание объекта класса тестирования
     private final CalculatorPresenter calcPres = new CalcPres(mock); // создается объек операции класса тестирования
