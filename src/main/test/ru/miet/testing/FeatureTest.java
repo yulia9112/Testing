@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/test/ru/miet/testing/features",
         glue = "main.test.ru.miet.testing",
-        tags = "@calculator",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        tags = "@calculator", // фильтр запускаемых тестов по тэгам
+        snippets = CucumberOptions.SnippetType.CAMELCASE // указывает в каком формате будет предлагать шаблон для нереализованных шагов
 )
 public class FeatureTest {
 }
